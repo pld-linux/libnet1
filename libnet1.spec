@@ -3,7 +3,7 @@ Summary(pl):	Biblioteka czynno¶ci sieciowych
 Summary(pt_BR):	API para funções de rede de baixo nível
 Name:		libnet1
 Version:	1.0.2a
-Release:	1
+Release:	2
 License:	BSD
 Group:		Libraries
 Source0:	http://www.packetfactory.net/libnet/dist/libnet-%{version}.tar.gz
