@@ -47,7 +47,7 @@ Requires:	%{name} = %{version}
 Header files and develpment documentation for libnet.
 
 %description devel -l pl
-Pliki nag³ówkowe i dokumetacja do libnet.
+Pliki nag³ówkowe i dokumentacja do libnet.
 
 %description devel -l pt_BR
 Arquivos de cabeçalho e bibliotecas usadas no desenvolvimento de
