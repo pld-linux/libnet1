@@ -1,0 +1,42 @@
+--- Libnet-1.0.2a/Makefile.in.orig	2003-07-03 19:21:17.000000000 +0000
++++ Libnet-1.0.2a/Makefile.in	2003-07-03 19:31:21.000000000 +0000
+@@ -18,20 +18,20 @@
+ LIB_PREFIX  =   @libdir@/
+ MAN_PREFIX  =   @MAN_PREFIX@
+ 
+-LIBNET      =   libnet
+-LIBPWRITE   =   libpwrite
++LIBNET      =   libnet1
++LIBPWRITE   =   libpwrite1
+ LIBSTATIC   =   lib/$(LIBNET).a
+ MAJ         =   1
+ MIN         =	0
+ LIBSHARED   =   lib/$(LIBNET).so.$(MAJ).$(MIN)
+ MAN         =   doc/$(LIBNET).3
+ INCLUDE     =   include/$(LIBNET).h
+-INCLUDE-H   =   include/$(LIBNET)/$(LIBNET)-headers.h
+-INCLUDE-F   =   include/$(LIBNET)/$(LIBNET)-functions.h
+-INCLUDE-S   =   include/$(LIBNET)/$(LIBNET)-structures.h
+-INCLUDE-M   =   include/$(LIBNET)/$(LIBNET)-macros.h
+-INCLUDE-A   =   include/$(LIBNET)/$(LIBNET)-asn1.h
+-INCLUDE-O   =   include/$(LIBNET)/$(LIBNET)-ospf.h
++INCLUDE-H   =   include/$(LIBNET)/libnet-headers.h
++INCLUDE-F   =   include/$(LIBNET)/libnet-functions.h
++INCLUDE-S   =   include/$(LIBNET)/libnet-structures.h
++INCLUDE-M   =   include/$(LIBNET)/libnet-macros.h
++INCLUDE-A   =   include/$(LIBNET)/libnet-asn1.h
++INCLUDE-O   =   include/$(LIBNET)/libnet-ospf.h
+ CONFIG      =   $(LIBNET)-config
+ DEFINES     +=  @DEFS@
+ RANLIB      =   @RANLIB@
+--- Libnet-1.0.2a/libnet-config.in.org	2003-07-03 19:48:30.000000000 +0000
++++ Libnet-1.0.2a/libnet-config.in	2003-07-03 19:49:15.000000000 +0000
+@@ -9,7 +9,7 @@
+ 
+ libnet_defines="@LIBNET_CONFIG_DEFINES@"
+ libnet_cflags="@LIBNET_CONFIG_CFLAGS@"
+-libnet_libs="@LIBNET_CONFIG_LIBS@ -lnet"
++libnet_libs="@LIBNET_CONFIG_LIBS@ -lnet1"
+ 
+ usage()
+ {
