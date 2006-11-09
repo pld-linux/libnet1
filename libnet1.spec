@@ -41,7 +41,7 @@ Summary:	Header files and develpment documentation for libnet
 Summary(pl):	Pliki nag³ówkowe i dokumetacja do libnet
 Summary(pt_BR):	Arquivos do pacote libnet para desenvolvimento
 Group:		Development/Libraries
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 
 %description devel
 Header files and develpment documentation for libnet.
@@ -58,7 +58,7 @@ Summary:	Static libnet library
 Summary(pl):	Biblioteka statyczna libnet
 Summary(pt_BR):	Arquivos do pacote libnet para desenvolvimento estático
 Group:		Development/Libraries
-Requires:	%{name}-devel = %{version}
+Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 Static libnet library.
