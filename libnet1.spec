@@ -1,6 +1,6 @@
 Summary:	"libpwrite" Network Routine Library
-Summary(pl):	Biblioteka czynno∂ci sieciowych
-Summary(pt_BR):	API para funÁıes de rede de baixo nÌvel
+Summary(pl.UTF-8):   Biblioteka czynno≈õci sieciowych
+Summary(pt_BR.UTF-8):   API para fun√ß√µes de rede de baixo n√≠vel
 Name:		libnet1
 Version:	1.0.2a
 Release:	2
@@ -27,48 +27,48 @@ stuff). Libnet includes packet creation at the IP layer and at the
 link layer as well as a host of supplementary and complementary
 functionality.
 
-%description -l pl
+%description -l pl.UTF-8
 Biblioteka dostarcza API dla popularnych nisko-poziomowych funkcji
-sieciowych (g≥Ûwnie wstrzykuj±cych pakiety).
+sieciowych (g≈Ç√≥wnie wstrzykujƒÖcych pakiety).
 
-%description -l pt_BR
-Este pacote fornece uma API simples para funÁıes de rede de baixo
-nÌvel comumente usadas (principalmente injeÁ„o de pacotes). Usando
-libnet, È simples construir e enviar pacotes de rede arbitr·rios.
+%description -l pt_BR.UTF-8
+Este pacote fornece uma API simples para fun√ß√µes de rede de baixo
+n√≠vel comumente usadas (principalmente inje√ß√£o de pacotes). Usando
+libnet, √© simples construir e enviar pacotes de rede arbitr√°rios.
 
 %package devel
 Summary:	Header files and develpment documentation for libnet
-Summary(pl):	Pliki nag≥Ûwkowe i dokumetacja do libnet
-Summary(pt_BR):	Arquivos do pacote libnet para desenvolvimento
+Summary(pl.UTF-8):   Pliki nag≈Ç√≥wkowe i dokumetacja do libnet
+Summary(pt_BR.UTF-8):   Arquivos do pacote libnet para desenvolvimento
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
 %description devel
 Header files and develpment documentation for libnet.
 
-%description devel -l pl
-Pliki nag≥Ûwkowe i dokumentacja do libnet.
+%description devel -l pl.UTF-8
+Pliki nag≈Ç√≥wkowe i dokumentacja do libnet.
 
-%description devel -l pt_BR
-Arquivos de cabeÁalho e bibliotecas usadas no desenvolvimento de
+%description devel -l pt_BR.UTF-8
+Arquivos de cabe√ßalho e bibliotecas usadas no desenvolvimento de
 aplicativos que usam libnet.
 
 %package static
 Summary:	Static libnet library
-Summary(pl):	Biblioteka statyczna libnet
-Summary(pt_BR):	Arquivos do pacote libnet para desenvolvimento est·tico
+Summary(pl.UTF-8):   Biblioteka statyczna libnet
+Summary(pt_BR.UTF-8):   Arquivos do pacote libnet para desenvolvimento est√°tico
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 Static libnet library.
 
-%description static -l pl
+%description static -l pl.UTF-8
 Biblioteka statyczna libnet.
 
-%description static -l pt_BR
-Arquivos de cabeÁalho e bibliotecas usadas no desenvolvimento de
-aplicativos est·ticos que usam libnet.
+%description static -l pt_BR.UTF-8
+Arquivos de cabe√ßalho e bibliotecas usadas no desenvolvimento de
+aplicativos est√°ticos que usam libnet.
 
 %prep
 %setup -q -n Libnet-%{version}
