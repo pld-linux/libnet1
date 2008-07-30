@@ -6,7 +6,7 @@ Version:	1.0.2a
 Release:	3
 License:	BSD
 Group:		Libraries
-Source0:	http://www.packetfactory.net/libnet/dist/libnet-%{version}.tar.gz
+Source0:	http://www.packetfactory.net/libnet/dist/deprecated/libnet-%{version}.tar.gz
 # Source0-md5:	ddf53f0f484184390e8c2a1bd0853667
 Patch0:		%{name}-shared.patch
 Patch1:		%{name}-include.patch
@@ -28,8 +28,14 @@ link layer as well as a host of supplementary and complementary
 functionality.
 
 %description -l pl.UTF-8
-Biblioteka dostarcza API dla popularnych nisko-poziomowych funkcji
-sieciowych (głównie wstrzykujących pakiety).
+Biblioteka sieciowa (Network Library, libnet) dostarcza proste API
+dla często używanych niskopoziomowych funkcji sieciowych (głównie
+wstrzykujących pakiety). Przy użyciu libnet można łatwo tworzyć
+dowolne pakiety sieciowe. Biblioteka jest przenośnym szkieletem do
+niskopoziomowego tworzenia i obsługi pakietów sieciowych (szczególnie
+w połączeniu z libpcap). Zawiera funkcje do tworzenia pakietów w
+warstwie IP oraz w warstwie połączenia, a także wiele funkcji
+uzupełniających.
 
 %description -l pt_BR.UTF-8
 Este pacote fornece uma API simples para funções de rede de baixo
@@ -109,16 +115,18 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README doc/CHANGELOG*
-%attr(755,root,root) %{_libdir}/lib*.so.*.*
+%attr(755,root,root) %{_libdir}/libnet1.so.*.*
 
 %files devel
 %defattr(644,root,root,755)
-%attr(755,root,root) %{_bindir}/*
-%attr(755,root,root) %{_libdir}/lib*.so
-%{_includedir}/*.h
+%attr(755,root,root) %{_bindir}/libnet1-config
+%attr(755,root,root) %{_libdir}/libnet1.so
+%attr(755,root,root) %{_libdir}/libpwrite1.so
+%{_includedir}/libnet1.h
 %{_includedir}/libnet1
-%{_mandir}/man*/*
+%{_mandir}/man3/libnet1.3*
 
 %files static
 %defattr(644,root,root,755)
-%{_libdir}/lib*.a
+%{_libdir}/libnet1.a
+%{_libdir}/libpwrite1.a
