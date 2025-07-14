@@ -78,9 +78,9 @@ aplicativos estáticos que usam libnet.
 
 %prep
 %setup -q -n Libnet-%{version}
-%patch0 -p1
-%patch1 -p1
-%patch2 -p1
+%patch -P0 -p1
+%patch -P1 -p1
+%patch -P2 -p1
 mv include/libnet include/libnet1
 
 %build
