@@ -3,7 +3,7 @@ Summary(pl.UTF-8):	Biblioteka czynności sieciowych
 Summary(pt_BR.UTF-8):	API para funções de rede de baixo nível
 Name:		libnet1
 Version:	1.0.2a
-Release:	5
+Release:	6
 License:	BSD
 Group:		Libraries
 Source0:	http://www.packetfactory.net/libnet/dist/deprecated/libnet-%{version}.tar.gz
@@ -89,7 +89,7 @@ install %{_datadir}/automake/config.* .
 %{__autoconf}
 %configure \
 	--with-pf_packet=yes
-%{__make} CFLAGS="%{rpmcflags}"
+%{__make} CFLAGS="%{rpmcflags} -std=gnu89"
 
 %install
 rm -rf $RPM_BUILD_ROOT
